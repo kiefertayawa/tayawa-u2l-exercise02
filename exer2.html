@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Logo and Navigation Bar</title>
+  <title>CMSC 100 Exercise 2</title>
   <style>
+    body {
+      background-color: #032539;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
     .flex-container {
       display: flex;
       align-items: center;
-      background-color: #032539;
       color: #FBF3F2;
       padding: 10px;
     }
 
     .logo img {
-      width: 60px;
+      width: 80px;
       height: auto;
+      margin-left: 10px;
     }
 
     .navigation {
-      flex-grow: 1; /* Allow navigation to grow and occupy available space */
+      flex-grow: 1;
       display: flex;
-      justify-content: center; /* Center navigation buttons */
+      justify-content: center;
     }
 
     .navigation ul {
@@ -40,12 +47,63 @@
     .navigation ul li a {
       color: #FBF3F2;
       font-size: 22px;
-      text-decoration: none; /* Remove underline */
+      text-decoration: none;
     }
 
     .navigation ul li a:hover {
       color: #FA991C; 
     }
+
+    .intro-container {
+      display: flex; /* Display the intro container as flex */
+      align-items: center; /* Align items vertically */
+      margin-top: 50px; /* Add margin for spacing */
+      justify-content: center;
+    }
+
+    .intro img {
+      width: 300px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .intro-text {
+      margin-left: 60px;
+      color: #FBF3F2; /* Change text color */
+      text-align: left;
+    }
+
+    .intro-text h1 {
+      font-size: 54px;
+      margin-bottom: 10px;
+      color: #FA991C;
+    }
+
+    .intro-text p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .footer {
+      color: #FBF3F2; /* Footer text color */
+      font-size: 12px;
+      padding: 20px; /* Padding for the footer content */
+      text-align: center; /* Center align the footer content */
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .footer img {
+      width: 35px; /* Adjust the size of the social media icons */
+      height: auto;
+      margin: 0 10px; /* Add margin to separate the icons */
+    }
+
   </style>
 </head>
 <body>
@@ -62,5 +120,31 @@
       </ul>
     </div>
   </div>
+
+  <div class="intro-container">
+    <div class="intro">
+      <img src="myphoto.jpg"> <!-- Replace "your_photo.jpg" with your actual photo -->
+    </div>
+    <div class="intro-text">
+      <h1>Hello, I'm Kiefer!</h1>
+      <p>
+        I am a graduating Computer Science student from the University of the Philippines Los Baños. <br>
+        I have experience coding in different programming languages like Python, Java, C, R, HTML, and CSS. <br>
+        Currently, I am trying to improve my frontend skills by practicing and exploring on my free time. <br>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-container">
+      <img src="fb.png" alt="Facebook">
+      <img src="ig.png" alt="Instagram">
+      <img src="gmail.png" alt="Gmail">
+      <img src="twitter.png" alt="Twitter">
+      <img src="in.png" alt="LinkedIn">
+    </div>
+    <p>Copyright. All rights reserved.</p>
+  </div>
+
 </body>
 </html>
