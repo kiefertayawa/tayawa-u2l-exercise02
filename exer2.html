@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logo and Navigation Bar</title>
+  <style>
+    .flex-container {
+      display: flex;
+      align-items: center;
+      background-color: #032539;
+      color: #FBF3F2;
+      padding: 10px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: auto;
+    }
+
+    .navigation {
+      flex-grow: 1; /* Allow navigation to grow and occupy available space */
+      display: flex;
+      justify-content: center; /* Center navigation buttons */
+    }
+
+    .navigation ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navigation ul li {
+      margin-left: 40px;
+    }
+
+    .navigation ul li:first-child {
+      margin-left: 0;
+    }
+
+    .navigation ul li a {
+      color: #FBF3F2;
+      font-size: 22px;
+      text-decoration: none; /* Remove underline */
+    }
+
+    .navigation ul li a:hover {
+      color: #FA991C; 
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="logo">
+      <img src="logo.png">
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
