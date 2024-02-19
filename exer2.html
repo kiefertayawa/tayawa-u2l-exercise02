@@ -4,13 +4,14 @@
   <title>CMSC 100 Exercise 2</title>
   <style>
     body {
-      background-color: #032539;
+      background: linear-gradient(to bottom, #343434 0%, #0d0907 80%);
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: Tahoma, sans-serif;
     }
 
     .flex-container {
+      background-color: #0d0907;
       display: flex;
       align-items: center;
       color: #FBF3F2;
@@ -55,53 +56,85 @@
     }
 
     .intro-container {
-      display: flex; /* Display the intro container as flex */
-      align-items: center; /* Align items vertically */
-      margin-top: 50px; /* Add margin for spacing */
+      display: flex; 
+      align-items: center; 
+      margin-top: 80px; 
       justify-content: center;
     }
 
     .intro img {
-      width: 300px;
+      width: 375px;
       height: auto;
       border-radius: 50%;
     }
 
     .intro-text {
       margin-left: 60px;
-      color: #FBF3F2; /* Change text color */
+      color: #FBF3F2; 
       text-align: left;
     }
 
     .intro-text h1 {
-      font-size: 54px;
+      font-size: 62px;
       margin-bottom: 10px;
       color: #FA991C;
     }
 
     .intro-text p {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.5;
     }
 
+    .photos-container {
+      display: flex;
+      justify-content: space-around; 
+      margin-top: 20px; 
+    }
+
+    .photo {
+      text-align: center;
+      margin: 0 0px;
+    }
+
+    .photo img {
+      width: 350px;
+      height: 250px; 
+      object-fit: cover; 
+      border-radius: 10px;
+    }
+
+    .photo p {
+      font-size: 16px;
+      color: #FBF3F2; 
+      margin-bottom: 70px;
+    }
+
+    .projects-made {
+      text-align: center; 
+      color: #FA991C; 
+      font-size: 30px;
+      margin-top: 60px;
+    }
+
     .footer {
-      color: #FBF3F2; /* Footer text color */
-      font-size: 12px;
-      padding: 20px; /* Padding for the footer content */
-      text-align: center; /* Center align the footer content */
+      color: #FBF3F2; 
+      font-size: 14px;
+      padding: 20px; 
+      text-align: center; 
+      margin-top: 50px; 
+      margin-bottom: 25px;
     }
 
     .footer-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 30px;
     }
 
     .footer img {
-      width: 35px; /* Adjust the size of the social media icons */
+      width: 40px; 
       height: auto;
-      margin: 0 10px; /* Add margin to separate the icons */
+      margin: 0 10px; 
     }
 
   </style>
@@ -123,7 +156,7 @@
 
   <div class="intro-container">
     <div class="intro">
-      <img src="myphoto.jpg"> <!-- Replace "your_photo.jpg" with your actual photo -->
+      <img src="myphoto.jpg">
     </div>
     <div class="intro-text">
       <h1>Hello, I'm Kiefer!</h1>
@@ -134,6 +167,25 @@
       </p>
     </div>
   </div>
+
+  <h2 class="projects-made">Projects Made</h2>
+
+  <div class="photos-container">
+    <div class="photo">
+      <img src="proj2.png"> 
+      <p>CMSC 12 Project: Maze Runner using Python</p>
+    </div>
+    <div class="photo">
+      <img src="proj1.png">
+      <p>CMSC 150 Project: Generic Solvers using R</p>
+    </div>
+    <div class="photo">
+      <img src="proj3.png"> 
+      <p>CMSC 22 Project: Yoda's World using Java</p>
+    </div>
+  </div>
+
+  <hr>
 
   <div class="footer">
     <div class="footer-container">
