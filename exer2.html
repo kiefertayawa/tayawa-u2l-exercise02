@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CMSC 100 Exercise 2</title>
+  <title>CMSC 100 Exercise 2</title> 
   <style>
     body {
-      background: linear-gradient(to bottom, #343434 0%, #0d0907 80%);
+      background: linear-gradient(to bottom, #343434 0%, #0d0907 80%); /* gradient */
       margin: 0;
       padding: 0;
       font-family: Tahoma, sans-serif;
@@ -31,7 +31,7 @@
     }
 
     .navigation ul {
-      list-style-type: none;
+      list-style-type: none; /* removes ul style type */
       margin: 0;
       padding: 0;
       display: flex;
@@ -51,7 +51,7 @@
       text-decoration: none;
     }
 
-    .navigation ul li a:hover {
+    .navigation ul li a:hover { /* hover effects on navigation buttons */
       color: #FA991C; 
     }
 
@@ -65,7 +65,7 @@
     .intro img {
       width: 375px;
       height: auto;
-      border-radius: 50%;
+      border-radius: 50%; /* circle photo */
     }
 
     .intro-text {
@@ -93,7 +93,12 @@
 
     .photo {
       text-align: center;
-      margin: 0 0px;
+      margin: 0 5px;
+      transition: transform 0.2s ease-in-out; /* hover effects on photo */
+    }
+
+    .photo:hover { /* hover effects on photo */
+      transform: scale(1.1);
     }
 
     .photo img {
@@ -137,7 +142,7 @@
       margin: 0 10px; 
     }
 
-  </style>
+  </style> <!-- CSS -->
 </head>
 <body>
   <div class="flex-container">
@@ -145,16 +150,16 @@
       <img src="logo.png">
     </div>
     <div class="navigation">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul> <!-- Navigation Buttons and Example Link (opens to a new tab) -->
+        <li><a href="https://example.com" target="_blank">Home</a></li>
+        <li><a href="https://example.com" target="_blank">About</a></li>
+        <li><a href="https://example.com" target="_blank">Projects</a></li>
+        <li><a href="https://example.com" target="_blank">Contact</a></li>
       </ul>
     </div>
   </div>
 
-  <div class="intro-container">
+  <div class="intro-container"> <!-- Featured Photo, Autobiography, and Skills -->
     <div class="intro">
       <img src="myphoto.jpg">
     </div>
@@ -170,7 +175,7 @@
 
   <h2 class="projects-made">Projects Made</h2>
 
-  <div class="photos-container">
+  <div class="photos-container"> <!-- Images of Projects Made and Description -->
     <div class="photo">
       <img src="proj2.png"> 
       <p>CMSC 12 Project: Maze Runner using Python</p>
@@ -187,7 +192,7 @@
 
   <hr>
 
-  <div class="footer">
+  <div class="footer"> <!-- Footer containing social media contacts -->
     <div class="footer-container">
       <img src="fb.png" alt="Facebook">
       <img src="ig.png" alt="Instagram">
